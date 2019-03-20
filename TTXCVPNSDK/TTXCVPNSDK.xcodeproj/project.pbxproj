@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C5569E62241D4DB002DC34D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5569E52241D4DB002DC34D /* AppDelegate.m */; };
+		2C5569E92241D4DB002DC34D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5569E82241D4DB002DC34D /* ViewController.m */; };
+		2C5569EC2241D4DB002DC34D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5569EA2241D4DB002DC34D /* Main.storyboard */; };
+		2C5569EE2241D4DD002DC34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5569ED2241D4DD002DC34D /* Assets.xcassets */; };
+		2C5569F12241D4DD002DC34D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5569EF2241D4DD002DC34D /* LaunchScreen.storyboard */; };
+		2C5569F42241D4DD002DC34D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5569F32241D4DD002DC34D /* main.m */; };
+		2C5569FE2241D4DD002DC34D /* TTXCVPNSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5569FD2241D4DD002DC34D /* TTXCVPNSDKTests.m */; };
+		2C556A092241D4DD002DC34D /* TTXCVPNSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C556A082241D4DD002DC34D /* TTXCVPNSDKUITests.m */; };
+		2C556A202241D637002DC34D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C556A1F2241D637002DC34D /* Security.framework */; };
+		2C556A222241D644002DC34D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C556A212241D644002DC34D /* SystemConfiguration.framework */; };
+		2C556A242241D65A002DC34D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C556A232241D65A002DC34D /* CoreGraphics.framework */; };
+		2C556A262241D679002DC34D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C556A252241D679002DC34D /* libiconv.tbd */; };
+		2C556A2D2241DB84002DC34D /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C556A292241DB84002DC34D /* openssl.framework */; };
+		2C556A2E2241DB84002DC34D /* libProxy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C556A2C2241DB84002DC34D /* libProxy.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C5569FA2241D4DD002DC34D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C5569D92241D4DB002DC34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C5569E02241D4DB002DC34D;
+			remoteInfo = TTXCVPNSDK;
+		};
+		2C556A052241D4DD002DC34D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C5569D92241D4DB002DC34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C5569E02241D4DB002DC34D;
+			remoteInfo = TTXCVPNSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C5569E12241D4DB002DC34D /* TTXCVPNSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTXCVPNSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5569E42241D4DB002DC34D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C5569E52241D4DB002DC34D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C5569E72241D4DB002DC34D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C5569E82241D4DB002DC34D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C5569EB2241D4DB002DC34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C5569ED2241D4DD002DC34D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C5569F02241D4DD002DC34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C5569F22241D4DD002DC34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C5569F32241D4DD002DC34D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C5569F92241D4DD002DC34D /* TTXCVPNSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTXCVPNSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5569FD2241D4DD002DC34D /* TTXCVPNSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTXCVPNSDKTests.m; sourceTree = "<group>"; };
+		2C5569FF2241D4DD002DC34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C556A042241D4DD002DC34D /* TTXCVPNSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTXCVPNSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C556A082241D4DD002DC34D /* TTXCVPNSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTXCVPNSDKUITests.m; sourceTree = "<group>"; };
+		2C556A0A2241D4DD002DC34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C556A162241D5B3002DC34D /* TTXCVPNSDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TTXCVPNSDK.entitlements; sourceTree = "<group>"; };
+		2C556A1F2241D637002DC34D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2C556A212241D644002DC34D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2C556A232241D65A002DC34D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C556A252241D679002DC34D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		2C556A292241DB84002DC34D /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openssl.framework; sourceTree = "<group>"; };
+		2C556A2A2241DB84002DC34D /* CertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CertHelper.h; sourceTree = "<group>"; };
+		2C556A2B2241DB84002DC34D /* L4Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L4Proxy.h; sourceTree = "<group>"; };
+		2C556A2C2241DB84002DC34D /* libProxy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libProxy.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C5569DE2241D4DB002DC34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C556A2D2241DB84002DC34D /* openssl.framework in Frameworks */,
+				2C556A262241D679002DC34D /* libiconv.tbd in Frameworks */,
+				2C556A2E2241DB84002DC34D /* libProxy.a in Frameworks */,
+				2C556A242241D65A002DC34D /* CoreGraphics.framework in Frameworks */,
+				2C556A222241D644002DC34D /* SystemConfiguration.framework in Frameworks */,
+				2C556A202241D637002DC34D /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5569F62241D4DD002DC34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C556A012241D4DD002DC34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C5569D82241D4DB002DC34D = {
+			isa = PBXGroup;
+			children = (
+				2C5569E32241D4DB002DC34D /* TTXCVPNSDK */,
+				2C5569FC2241D4DD002DC34D /* TTXCVPNSDKTests */,
+				2C556A072241D4DD002DC34D /* TTXCVPNSDKUITests */,
+				2C5569E22241D4DB002DC34D /* Products */,
+				2C556A1E2241D637002DC34D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C5569E22241D4DB002DC34D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C5569E12241D4DB002DC34D /* TTXCVPNSDK.app */,
+				2C5569F92241D4DD002DC34D /* TTXCVPNSDKTests.xctest */,
+				2C556A042241D4DD002DC34D /* TTXCVPNSDKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C5569E32241D4DB002DC34D /* TTXCVPNSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2C556A162241D5B3002DC34D /* TTXCVPNSDK.entitlements */,
+				2C556A282241DB84002DC34D /* VPNSDK  */,
+				2C5569E42241D4DB002DC34D /* AppDelegate.h */,
+				2C5569E52241D4DB002DC34D /* AppDelegate.m */,
+				2C5569E72241D4DB002DC34D /* ViewController.h */,
+				2C5569E82241D4DB002DC34D /* ViewController.m */,
+				2C5569EA2241D4DB002DC34D /* Main.storyboard */,
+				2C5569ED2241D4DD002DC34D /* Assets.xcassets */,
+				2C5569EF2241D4DD002DC34D /* LaunchScreen.storyboard */,
+				2C5569F22241D4DD002DC34D /* Info.plist */,
+				2C5569F32241D4DD002DC34D /* main.m */,
+			);
+			path = TTXCVPNSDK;
+			sourceTree = "<group>";
+		};
+		2C5569FC2241D4DD002DC34D /* TTXCVPNSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C5569FD2241D4DD002DC34D /* TTXCVPNSDKTests.m */,
+				2C5569FF2241D4DD002DC34D /* Info.plist */,
+			);
+			path = TTXCVPNSDKTests;
+			sourceTree = "<group>";
+		};
+		2C556A072241D4DD002DC34D /* TTXCVPNSDKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C556A082241D4DD002DC34D /* TTXCVPNSDKUITests.m */,
+				2C556A0A2241D4DD002DC34D /* Info.plist */,
+			);
+			path = TTXCVPNSDKUITests;
+			sourceTree = "<group>";
+		};
+		2C556A1E2241D637002DC34D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C556A252241D679002DC34D /* libiconv.tbd */,
+				2C556A232241D65A002DC34D /* CoreGraphics.framework */,
+				2C556A212241D644002DC34D /* SystemConfiguration.framework */,
+				2C556A1F2241D637002DC34D /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C556A282241DB84002DC34D /* VPNSDK  */ = {
+			isa = PBXGroup;
+			children = (
+				2C556A292241DB84002DC34D /* openssl.framework */,
+				2C556A2A2241DB84002DC34D /* CertHelper.h */,
+				2C556A2B2241DB84002DC34D /* L4Proxy.h */,
+				2C556A2C2241DB84002DC34D /* libProxy.a */,
+			);
+			path = "VPNSDK ";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C5569E02241D4DB002DC34D /* TTXCVPNSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C556A0D2241D4DD002DC34D /* Build configuration list for PBXNativeTarget "TTXCVPNSDK" */;
+			buildPhases = (
+				2C5569DD2241D4DB002DC34D /* Sources */,
+				2C5569DE2241D4DB002DC34D /* Frameworks */,
+				2C5569DF2241D4DB002DC34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTXCVPNSDK;
+			productName = TTXCVPNSDK;
+			productReference = 2C5569E12241D4DB002DC34D /* TTXCVPNSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C5569F82241D4DD002DC34D /* TTXCVPNSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C556A102241D4DD002DC34D /* Build configuration list for PBXNativeTarget "TTXCVPNSDKTests" */;
+			buildPhases = (
+				2C5569F52241D4DD002DC34D /* Sources */,
+				2C5569F62241D4DD002DC34D /* Frameworks */,
+				2C5569F72241D4DD002DC34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C5569FB2241D4DD002DC34D /* PBXTargetDependency */,
+			);
+			name = TTXCVPNSDKTests;
+			productName = TTXCVPNSDKTests;
+			productReference = 2C5569F92241D4DD002DC34D /* TTXCVPNSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C556A032241D4DD002DC34D /* TTXCVPNSDKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C556A132241D4DD002DC34D /* Build configuration list for PBXNativeTarget "TTXCVPNSDKUITests" */;
+			buildPhases = (
+				2C556A002241D4DD002DC34D /* Sources */,
+				2C556A012241D4DD002DC34D /* Frameworks */,
+				2C556A022241D4DD002DC34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C556A062241D4DD002DC34D /* PBXTargetDependency */,
+			);
+			name = TTXCVPNSDKUITests;
+			productName = TTXCVPNSDKUITests;
+			productReference = 2C556A042241D4DD002DC34D /* TTXCVPNSDKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C5569D92241D4DB002DC34D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "http://www.jianshu.com/u/84d0142cbec9";
+				TargetAttributes = {
+					2C5569E02241D4DB002DC34D = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					2C5569F82241D4DD002DC34D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2C5569E02241D4DB002DC34D;
+					};
+					2C556A032241D4DD002DC34D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2C5569E02241D4DB002DC34D;
+					};
+				};
+			};
+			buildConfigurationList = 2C5569DC2241D4DB002DC34D /* Build configuration list for PBXProject "TTXCVPNSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C5569D82241D4DB002DC34D;
+			productRefGroup = 2C5569E22241D4DB002DC34D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C5569E02241D4DB002DC34D /* TTXCVPNSDK */,
+				2C5569F82241D4DD002DC34D /* TTXCVPNSDKTests */,
+				2C556A032241D4DD002DC34D /* TTXCVPNSDKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C5569DF2241D4DB002DC34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5569F12241D4DD002DC34D /* LaunchScreen.storyboard in Resources */,
+				2C5569EE2241D4DD002DC34D /* Assets.xcassets in Resources */,
+				2C5569EC2241D4DB002DC34D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5569F72241D4DD002DC34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C556A022241D4DD002DC34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C5569DD2241D4DB002DC34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5569E92241D4DB002DC34D /* ViewController.m in Sources */,
+				2C5569F42241D4DD002DC34D /* main.m in Sources */,
+				2C5569E62241D4DB002DC34D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5569F52241D4DD002DC34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5569FE2241D4DD002DC34D /* TTXCVPNSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C556A002241D4DD002DC34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C556A092241D4DD002DC34D /* TTXCVPNSDKUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C5569FB2241D4DD002DC34D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C5569E02241D4DB002DC34D /* TTXCVPNSDK */;
+			targetProxy = 2C5569FA2241D4DD002DC34D /* PBXContainerItemProxy */;
+		};
+		2C556A062241D4DD002DC34D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C5569E02241D4DB002DC34D /* TTXCVPNSDK */;
+			targetProxy = 2C556A052241D4DD002DC34D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C5569EA2241D4DB002DC34D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C5569EB2241D4DB002DC34D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C5569EF2241D4DD002DC34D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C5569F02241D4DD002DC34D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C556A0B2241D4DD002DC34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C556A0C2241D4DD002DC34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C556A0E2241D4DD002DC34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TTXCVPNSDK/TTXCVPNSDK.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NR2FXTKS66;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTXCVPNSDK/VPNSDK\\ ",
+					"$(PROJECT_DIR)/VPNSDK\\ ",
+				);
+				INFOPLIST_FILE = TTXCVPNSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTXCVPNSDK/VPNSDK\\ ",
+					"$(PROJECT_DIR)/VPNSDK\\ ",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttxc.TTXCVPNSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C556A0F2241D4DD002DC34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TTXCVPNSDK/TTXCVPNSDK.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NR2FXTKS66;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTXCVPNSDK/VPNSDK\\ ",
+					"$(PROJECT_DIR)/VPNSDK\\ ",
+				);
+				INFOPLIST_FILE = TTXCVPNSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTXCVPNSDK/VPNSDK\\ ",
+					"$(PROJECT_DIR)/VPNSDK\\ ",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttxc.TTXCVPNSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C556A112241D4DD002DC34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NR2FXTKS66;
+				INFOPLIST_FILE = TTXCVPNSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttxc.TTXCVPNSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTXCVPNSDK.app/TTXCVPNSDK";
+			};
+			name = Debug;
+		};
+		2C556A122241D4DD002DC34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NR2FXTKS66;
+				INFOPLIST_FILE = TTXCVPNSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttxc.TTXCVPNSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTXCVPNSDK.app/TTXCVPNSDK";
+			};
+			name = Release;
+		};
+		2C556A142241D4DD002DC34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NR2FXTKS66;
+				INFOPLIST_FILE = TTXCVPNSDKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttxc.TTXCVPNSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TTXCVPNSDK;
+			};
+			name = Debug;
+		};
+		2C556A152241D4DD002DC34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NR2FXTKS66;
+				INFOPLIST_FILE = TTXCVPNSDKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttxc.TTXCVPNSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TTXCVPNSDK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C5569DC2241D4DB002DC34D /* Build configuration list for PBXProject "TTXCVPNSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C556A0B2241D4DD002DC34D /* Debug */,
+				2C556A0C2241D4DD002DC34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C556A0D2241D4DD002DC34D /* Build configuration list for PBXNativeTarget "TTXCVPNSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C556A0E2241D4DD002DC34D /* Debug */,
+				2C556A0F2241D4DD002DC34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C556A102241D4DD002DC34D /* Build configuration list for PBXNativeTarget "TTXCVPNSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C556A112241D4DD002DC34D /* Debug */,
+				2C556A122241D4DD002DC34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C556A132241D4DD002DC34D /* Build configuration list for PBXNativeTarget "TTXCVPNSDKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C556A142241D4DD002DC34D /* Debug */,
+				2C556A152241D4DD002DC34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C5569D92241D4DB002DC34D /* Project object */;
+}
