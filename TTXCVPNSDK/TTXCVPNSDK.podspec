@@ -1,10 +1,3 @@
-#
-#  Be sure to run `pod spec lint TTXCVPNSDK.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
 
 Pod::Spec.new do |s|
 
@@ -40,13 +33,14 @@ s.frameworks   = 'UIKit','Foundation','CoreGraphics','SystemConfiguration','Secu
 
 
 #你的SDK路径
-s.vendored_libraries =  'VPNSDK/libProxy.a'
+s.vendored_libraries =  'TTXCVPNSDK/TTXCVPNSDK/VPNSDK/libProxy.a'
+
 #s.vendored_frameworks = 'TTXCVPNSDK/VPNSDK/openssl.framework'
 
 #SDK头文件路径
-#s.public_header_files = "Classes/**/*.h"
+#s.public_header_files = 'Classes/**/*.h'
 
 #需要包含的源文件 
-s.source_files  ="VPNSDK/*.h"
+s.source_files  = 'TTXCVPNSDK'
 
 end
