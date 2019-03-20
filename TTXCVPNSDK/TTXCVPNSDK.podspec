@@ -33,22 +33,23 @@ s.source       = { :git => 'https://github.com/samifei/TTXCVPNSDK.git', :tag => 
 #支持最小系统版本
 s.platform     = :ios, '8.0'
 
-#需要包含的源文件 
-s.source_files = 'MyFirstFramework/MyFirstFramework.framework/Headers/*.{h}'
-
-#你的SDK路径
-s.vendored_frameworks = 'MyFirstFramework/MyFirstFramework.framework'
-
-#SDK头文件路径
-s.public_header_files = 'MyFirstFramework/MyFirstFramework.framework/Headers/MyFirstFramework.h'
-
 #依赖库
 s.libraries    = 'iconv', 'xml2'
-
 #依赖库
 s.frameworks   = 'UIKit','Foundation','CoreGraphics','SystemConfiguration','Security'
 
-s.source_files  = "Classes", "Classes/**/*.{h,m}"
-s.public_header_files = "Classes/**/*.h"
+
+#你的SDK路径
+s.vendored_libraries =  'TTXCVPNSDK/VPNSDK/libProxy.a'
+#s.vendored_frameworks = 'TTXCVPNSDK/VPNSDK/openssl.framework'
+
+#SDK头文件路径
+#s.public_header_files = 'MyFirstFramework/MyFirstFramework.framework/Headers/MyFirstFramework.h'
+
+
+#需要包含的源文件 
+s.source_files  ="TTXCVPNSDK/VPNSDK/*.h"
+
+#s.public_header_files = "Classes/**/*.h"
 
 end
