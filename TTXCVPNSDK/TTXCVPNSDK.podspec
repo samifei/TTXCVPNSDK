@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
 #名称
-s.name         = 'MyFirstFramework'
+s.name         = 'TTXCVPNSDK'
 
 #版本号
 s.version      = '0.0.1'
