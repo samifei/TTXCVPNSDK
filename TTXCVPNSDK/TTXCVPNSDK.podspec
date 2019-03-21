@@ -33,7 +33,7 @@ s.frameworks   = 'UIKit','Foundation','CoreGraphics','SystemConfiguration','Secu
 
 
 #你的SDK路径
-s.vendored_libraries =  'TTXCVPNSDK/TTXCVPNSDK/VPNSDK/libProxy.a'
+s.vendored_libraries =  '**/libProxy.a'
 
 #s.vendored_frameworks = 'TTXCVPNSDK/VPNSDK/openssl.framework'
 
@@ -41,6 +41,6 @@ s.vendored_libraries =  'TTXCVPNSDK/TTXCVPNSDK/VPNSDK/libProxy.a'
 #s.public_header_files = 'Classes/**/*.h'
 
 #需要包含的源文件 
-s.source_files  = 'TTXCVPNSDK'
+s.source_files  = '**/*.{h}'
 
 end
