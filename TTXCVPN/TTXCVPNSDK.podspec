@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 s.name         = 'TTXCVPNSDK'
 
 #版本号
-s.version      = '0.0.1'
+s.version      = '0.0.3'
 
 #许可证
 s.license      = { :type => 'MIT' } 
