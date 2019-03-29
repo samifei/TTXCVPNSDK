@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 s.name         = 'TTXCVPNSDK'
 
 #版本号
-s.version      = '0.0.3'
+s.version      = '1.0.3'
 
 #许可证
 s.license      = { :type => 'MIT' } 
@@ -35,7 +35,7 @@ s.frameworks   = 'UIKit','Foundation','CoreGraphics','SystemConfiguration','Secu
 #你的SDK路径
 s.vendored_libraries =  '**/libProxy.a'
 
-#s.vendored_frameworks = 'TTXCVPNSDK/VPNSDK/openssl.framework'
+s.vendored_frameworks = '**/openssl.framework'
 
 #SDK头文件路径
 #s.public_header_files = 'Classes/**/*.h'
